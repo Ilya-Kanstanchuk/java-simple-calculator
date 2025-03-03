@@ -1,3 +1,8 @@
+/*
+In this class we create a button with memory logic
+ */
+
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,3 +1,8 @@
+/*
+In this class we create a button that executes operations on 1 number
+ */
+
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

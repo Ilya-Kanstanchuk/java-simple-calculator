@@ -1,5 +1,13 @@
+/*
+In this class we initialize 2 methods that provides logic for arithmetic operations
+ */
+
+
 public class ArithmeticOperations {
     private String currentString;
+    /*
+    This method is for operations with 2 numbers
+     */
     public static double basicOperations(double firstNum, double secondNum, String sign) throws IllegalArgumentException
     {
         double result = 0;
@@ -24,6 +32,9 @@ public class ArithmeticOperations {
         }
         return result;
     }
+    /*
+    This method is for operations on 1 number
+     */
     public static double singleNumberOperation(double number, String operation) throws IllegalArgumentException
     {
         double result = 0;

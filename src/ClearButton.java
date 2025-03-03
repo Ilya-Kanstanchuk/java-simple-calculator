@@ -1,3 +1,7 @@
+/*
+In this class we create button that clean all the information from the text field
+ */
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

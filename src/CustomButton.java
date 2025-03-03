@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,6 +13,7 @@ public abstract class CustomButton extends JButton {
         this.operations = operations;
         this.display = display;
         this.buttonText = buttonText;
+        setFont(new Font("Arial", Font.BOLD, 14));
     }
 
 }

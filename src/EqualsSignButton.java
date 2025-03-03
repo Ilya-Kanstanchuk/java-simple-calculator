@@ -1,3 +1,7 @@
+/*
+In  this class we create an equals sign button, that shows the result of operation
+ */
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

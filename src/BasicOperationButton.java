@@ -1,3 +1,7 @@
+/*
+In this class we create a button that executes operations on 2 numbers
+ */
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

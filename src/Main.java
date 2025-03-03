@@ -1,3 +1,8 @@
+/*
+This is the launcher class
+ */
+
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,6 +15,8 @@ public class Main {
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setSize(width, height);
                 frame.setVisible(true);
+                frame.setLocationRelativeTo(null);
+                frame.setResizable(false);
             }
         });
     }
@@ -22,29 +29,9 @@ public class Main {
                 }
             }
         } catch (Exception e) {
-            // If Nimbus is not available, you can set the GUI to another look and feel.
+
         }
-        String[]op = new String[]{"", null, ""};
-        JFrame frame = new JFrame();
-        frame.setLayout(new FlowLayout());
-        JTextField text = new JTextField(10);
-        text.setEditable(false);
-        frame.add(text);
-        frame.add(new NumericButton(op, text, "1"));
-        frame.add(new NumericButton(op, text, "2"));
-        frame.add(new NumericButton(op, text, "3"));
-        frame.add(new NumericButton(op, text, "4"));
-        frame.add(new NumericButton(op, text, "0"));
-        frame.add(new NumericButton(op, text, "."));
-        frame.add(new BasicOperationButton(op, text, "+"));
-        frame.add(new BasicOperationButton(op, text, "*"));
-        frame.add(new BasicOperationButton(op, text, "/"));
-        frame.add(new EqualsSignButton(op, text, "="));
-        frame.add(new SingleOperationButton(op, text, "√"));
-        frame.add(new SingleOperationButton(op, text, "+/-"));
-        frame.add(new ClearButton(op, text, "C"));
-        frame.add(new MemoryButton(op, text, "M+"));
-        frame.add(new MemoryButton(op, text, "MR"));
-        run(frame, 500, 300);
+        MainFrame mf = new MainFrame();
+        run(mf, 300, 400);
     }
 }
